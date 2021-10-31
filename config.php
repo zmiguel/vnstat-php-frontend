@@ -49,8 +49,8 @@
     // You can generate vnstat dumps with the command:
     //   vnstat --dumpdb -i $iface > /path/to/data_dir/vnstat_dump_$iface
     //
-    $vnstat_bin = '/usr/bin/vnstat';
-    //$data_dir = './dumps';
+    //$vnstat_bin = '/usr/bin/vnstat';
+    $data_dir = '/opt/vnstat';
 
     // graphics format to use: svg or png
     $graph_format='svg';
@@ -66,7 +66,7 @@
     define('SVG_FONT', 'Verdana');
 
     // Default theme
-    define('DEFAULT_COLORSCHEME', 'light');
+    define('DEFAULT_COLORSCHEME', 'dark');
     
     // SVG Depth scaling factor
     define('SVG_DEPTH_SCALING', 1);
