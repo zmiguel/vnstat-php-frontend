@@ -37,13 +37,6 @@
     $iface_list = array('bond0');
 
     //
-    // optional names for interfaces
-    // if there's no name set for an interface then the interface identifier
-    // will be displayed instead
-    //
-    $iface_title['bond0'] = 'BondFace';
-
-    //
     // There are two possible sources for vnstat data. If the $vnstat_bin
     // variable is set then vnstat is called directly from the PHP script
     // to get the interface data.
@@ -57,7 +50,7 @@
     //   vnstat --dumpdb -i $iface > /path/to/data_dir/vnstat_dump_$iface
     //
     $vnstat_bin = '/usr/bin/vnstat';
-    $data_dir = './dumps';
+    //$data_dir = './dumps';
 
     // graphics format to use: svg or png
     $graph_format='svg';
